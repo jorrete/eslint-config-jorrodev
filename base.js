@@ -30,9 +30,13 @@ module.exports = {
       'error',
       'always'
     ],
+    'indent': [
+      'error',
+      2,
+    ],
     'no-multiple-empty-lines': [
       'error',
-      { 'max': 1, 'maxBOF': 1 },
+      { 'max': 1, 'maxEOF': 0 },
     ],
   }
 };
