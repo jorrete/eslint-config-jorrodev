@@ -86,6 +86,6 @@ module.exports = {
         'exports': 'always-multiline',
         'functions': 'always-multiline'
     }],
-    'newline-destructuring/newline': 'error',
+    'newline-destructuring/newline': ['error', { items: 1 }],
   }
 };
