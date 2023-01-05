@@ -12,6 +12,7 @@ module.exports = {
     'sourceType': 'module'
   },
   'plugins': [
+    'sort-imports-es6-autofix',
   ],
   'rules': {
     'object-curly-spacing': [
@@ -37,6 +38,19 @@ module.exports = {
     'no-multiple-empty-lines': [
       'error',
       { 'max': 1, 'maxEOF': 0 },
+    ],
+    'sort-imports-es6-autofix/sort-imports-es6': [
+      2,
+      {
+        'ignoreCase': false,
+        'ignoreMemberSort': false,
+        'memberSyntaxSortOrder': [
+          'none',
+          'all',
+          'multiple',
+          'single'
+        ]
+      }
     ],
   }
 };
