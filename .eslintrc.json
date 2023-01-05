@@ -1,5 +1,4 @@
 {
-  "extends": ["node"],
   "rules": {
     "import/no-commonjs": "off"
   }

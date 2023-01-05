@@ -1,4 +1,4 @@
-const base = require('./base.js');
+var base = require('./base.js');
 
 module.exports = Object.assign({}, base, {
   'extends': [].concat(base.extends, [
