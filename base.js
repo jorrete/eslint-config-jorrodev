@@ -13,6 +13,7 @@ module.exports = {
   },
   'plugins': [
     'sort-imports-es6-autofix',
+    'newline-destructuring',
   ],
   'rules': {
     'array-bracket-newline': [
@@ -85,5 +86,6 @@ module.exports = {
         'exports': 'always-multiline',
         'functions': 'always-multiline'
     }],
+    'newline-destructuring/newline': 'error',
   }
 };
