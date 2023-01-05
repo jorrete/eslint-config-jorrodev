@@ -15,9 +15,32 @@ module.exports = {
     'sort-imports-es6-autofix',
   ],
   'rules': {
+    'array-bracket-newline': [
+      'error',
+      'always'
+    ],
+    'array-element-newline': [
+      'error',
+      'always'
+    ],
+    'object-property-newline': [
+      'error'
+    ],
+    'object-curly-newline': [
+      'error',
+      'always'
+    ],
     'object-curly-spacing': [
       'error',
       'always',
+    ],
+    'function-call-argument-newline': [
+      'error',
+      'always'
+    ],
+    'function-paren-newline': [
+      'error',
+      'multiline-arguments'
     ],
     'linebreak-style': [
       'error',
@@ -59,9 +82,5 @@ module.exports = {
         'exports': 'always-multiline',
         'functions': 'always-multiline'
     }],
-    'object-curly-spacing': [
-      'error',
-      'always'
-    ],
   }
 };
