@@ -16,9 +16,12 @@ module.exports = {
     'newline-destructuring',
   ],
   'rules': {
+    "no-multi-spaces": "error",
     'array-bracket-newline': [
       'error',
-      'always'
+      {
+        'minItems': 1
+      }
     ],
     'array-element-newline': [
       'error',
@@ -29,7 +32,10 @@ module.exports = {
     ],
     'object-curly-newline': [
       'error',
-      'always'
+      {
+        'multiline': true,
+        'minProperties': 1
+      }
     ],
     'object-curly-spacing': [
       'error',
