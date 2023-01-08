@@ -14,6 +14,7 @@ module.exports = {
   'plugins': [
     'sort-imports-es6-autofix',
     'newline-destructuring',
+    'import-newlines',
   ],
   'rules': {
     "no-multi-spaces": "error",
@@ -33,8 +34,20 @@ module.exports = {
     'object-curly-newline': [
       'error',
       {
-        'multiline': true,
-        'minProperties': 1
+        'ObjectExpression': {
+          'multiline': true,
+          'minProperties': 1
+        },
+        'ObjectPattern': {
+          'multiline': true,
+          'minProperties': 1
+        },
+        'ImportDeclaration': {
+          'consistent': true
+        },
+        'ExportDeclaration': {
+          'multiline': true
+        }
       }
     ],
     'object-curly-spacing': [
@@ -43,8 +56,9 @@ module.exports = {
     ],
     'function-call-argument-newline': [
       'error',
-      'always'
+      'consistent'
     ],
+    'space-in-parens': ['error', 'never'],
     'function-paren-newline': [
       'error',
       'multiline-arguments'
@@ -93,5 +107,11 @@ module.exports = {
         'functions': 'always-multiline'
     }],
     'newline-destructuring/newline': ['error', { items: 1 }],
+    'import-newlines/enforce': [
+      'error',
+      {
+        'items': 3
+      }
+    ],
   }
 };
