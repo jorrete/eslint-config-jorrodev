@@ -17,6 +17,7 @@ module.exports = {
     'import-newlines',
   ],
   'rules': {
+    'no-unused-vars': 'error',
     "no-multi-spaces": "error",
     'array-bracket-newline': [
       'error',
