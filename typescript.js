@@ -15,5 +15,9 @@ module.exports = Object.assign({}, base, {
       'error',
       2
     ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double",
+    ],
   }),
 });

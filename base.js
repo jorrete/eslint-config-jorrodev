@@ -6,13 +6,13 @@ module.exports = {
   },
   'extends': [
     'eslint:recommended',
+    "plugin:perfectionist/recommended-natural",
   ],
   'parserOptions': {
     'ecmaVersion': 'latest',
     'sourceType': 'module'
   },
   'plugins': [
-    'sort-imports-es6-autofix',
     'newline-destructuring',
     'import-newlines',
   ],
@@ -21,16 +21,11 @@ module.exports = {
     "no-multi-spaces": "error",
     'array-bracket-newline': [
       'error',
-      {
-        'minItems': 1
-      }
+      "consistent",
     ],
     'array-element-newline': [
       'error',
-      'always'
-    ],
-    'object-property-newline': [
-      'error'
+      "consistent"
     ],
     'object-curly-newline': [
       'error',
@@ -55,11 +50,17 @@ module.exports = {
       'error',
       'always',
     ],
+    'object-property-newline': [
+      'error'
+    ],
     'function-call-argument-newline': [
       'error',
       'consistent'
     ],
-    'space-in-parens': ['error', 'never'],
+    'space-in-parens': [
+      'error',
+      'never',
+    ],
     'function-paren-newline': [
       'error',
       'multiline-arguments'
@@ -87,27 +88,20 @@ module.exports = {
       'error',
       { 'max': 1, 'maxEOF': 0 },
     ],
-    'sort-imports-es6-autofix/sort-imports-es6': [
-      2,
+    'comma-dangle': [
+      'error',
       {
-        'ignoreCase': false,
-        'ignoreMemberSort': false,
-        'memberSyntaxSortOrder': [
-          'none',
-          'all',
-          'multiple',
-          'single'
-        ]
-      },
-    ],
-    'comma-dangle': ['error', {
         'arrays': 'always-multiline',
         'objects': 'always-multiline',
         'imports': 'always-multiline',
         'exports': 'always-multiline',
         'functions': 'always-multiline'
-    }],
-    'newline-destructuring/newline': ['error', { items: 1 }],
+      },
+    ],
+    'newline-destructuring/newline': [
+      'error',
+      { items: 1 },
+    ],
     'import-newlines/enforce': [
       'error',
       {
