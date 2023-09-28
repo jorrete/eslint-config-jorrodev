@@ -9,6 +9,7 @@ const xxx = {
   bar() {
     void 0;
   },
+  foo: 3,
   tar() {
     void 0;
   },
@@ -22,16 +23,16 @@ function bar(a, b) {
 
 bar();
 
-const list = [ 1, 3 ];
-
-setTimeout(
-  () => console.log('xx'),
+const list = [
+  1,
   3,
-);
+];
+
+setTimeout(() => console.log('xx'), 3);
 
 console.log({
-  foo: 3,
-  foo3: 3, 
+  foo: 3, 
+  foo3: 3,
 });
 
 [].reduce((result, [key, value]) => {
@@ -50,13 +51,14 @@ console.log(dd());
 
 export function Foo() {
   return (
-    <div
+    <span
       style={{
         backgroundColor: 'red',
+        backgroundOrigin: 'unset',
       }}
-      id=""
+      id="foo"
     >
       foo
-    </div>
+    </span>
   );
 }
